@@ -22,6 +22,9 @@ source <(kubectl completion zsh)
 echo "[[ $commands[kubectl] ]] && source <(kubectl completion zsh)" >> ~/.zshrc
 ```
 
+
+[[리눅스 kubernetes 설치]]
+
 ---
 
 #개발언어 #쿠버네티스

@@ -49,7 +49,7 @@ kubectl run {이름} --image={도커 이미지} --port {포트}
 kubectl run webserver --image=nginx:1.14 --port 80
 ```
 
-deployment 생성
+deployment 생성 [[Deployment]]
 ```bash
 kubectl create deployment {이름} --image={도커 이미지} --replicas={개수} kubectl create deployment myapp --image=httpd --replicas=3
 ```
@@ -107,6 +107,10 @@ kubectl scale rc rc-nginx --replicas=2
 # Replicaset을 지울때 파드는 그대로 두고 지우는 경우 
 kubectl delete rs rs-nginx --cascade=false
 ```
+
+
+[[Service]]
+
 
 ---
 
