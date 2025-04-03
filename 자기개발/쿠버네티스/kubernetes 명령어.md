@@ -108,6 +108,11 @@ kubectl scale rc rc-nginx --replicas=2
 kubectl delete rs rs-nginx --cascade=false
 ```
 
+배포 재시작
+```bash
+kubectl rollout restart deployment sso-be-deployment -n sso
+```
+
 
 [[Service]]
 
