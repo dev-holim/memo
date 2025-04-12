@@ -1,5 +1,11 @@
 
 ```bash
+pip install --no-cache-dir unidic
+
+python -m unidic download
+```
+
+```bash
 python3 preprocess_text.py --metadata data/KR-default/metadata.list
 ```
 

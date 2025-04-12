@@ -9,12 +9,17 @@ sudo tar xzf Python-3.10.8.tgz
 cd Python-3.10.8
 
 
-sudo ./configure --enable-optimizations --with-ensurepip=install
+sudo ./configure --enable-optimizations
 sudo ./configure --enable-optimizations --without-pymalloc
+sudo ./configure --enable-optimizations --with-ensurepip=install
 
 sudo make -j$(nproc)
 
 sudo make altinstall
+```
+
+```bash
+make clean
 ```
 
 #### Python 버전별로 관리
