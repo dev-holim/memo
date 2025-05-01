@@ -37,5 +37,5 @@ c.NotebookApp.open_browser = False
 ```
 
 ```
-argon2:$argon2id$v=19$m=10240,t=10,p=8$QxLX6J9JFgRFeKkFvG/Gyg$z5cEH1D/+mDTU/g4d9PtpXv0xJVpGz4QeKigQh5zTe8
+argon2:$argon2id$v=19$m=10240,t=10,p=8$3kqk5Uc6TeY0q7GCjbyIbA$r3WURzvO6gD7Kjc6PkM3+4gpBnXsFm8pao/RgdpCQvk
 ```
