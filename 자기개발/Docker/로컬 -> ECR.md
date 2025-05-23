@@ -9,11 +9,13 @@ docker build -t media-scrapper .
 ```
 
 ```bash
-docker tag media-scrapper:latest 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-OuAqF4VQQIfA
+docker tag media-scrapper:latest 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-v1.0.1
+
+docker tag sso:be 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/sso:be
 ```
 
 ```bash
-docker push 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-OuAqF4VQQIfA
+docker push 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-v1.0.1
 ```
 
 
