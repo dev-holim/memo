@@ -1,3 +1,6 @@
+```bash
+nvidia-smi
+```
 ### CUDA 설치
 
 1. OS, GPU 확인
@@ -33,9 +36,9 @@ sudo apt install gcc
 
 6. CUDA 설치
 ```
-sudo wget https://developer.download.nvidia.com/compute/cuda/12.8.1/local_installers/cuda_12.8.1_570.124.06_linux.run
+sudo wget https://developer.download.nvidia.com/compute/cuda/12.9.0/local_installers/cuda_12.9.0_575.51.03_linux.run
 
-sudo sh cuda_12.8.1_570.124.06_linux.run
+sudo sh cuda_12.9.0_575.51.03_linux.run
 ```
 
 7. 아래 상태가 나오면 **Continue**로 진행
@@ -52,8 +55,8 @@ sudo sh cuda_12.8.1_570.124.06_linux.run
 
 11.  .bashrc 하단에 아래 추가
 ```.bashrc
-export PATH=/usr/local/cuda-12.8/bin${PATH:+:${PATH}}
-export LD_LIBRARY_PATH=/usr/local/cuda-12.8/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+export PATH=/usr/local/cuda-12.9/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-12.9/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 ```
 
 ```bash
@@ -67,7 +70,7 @@ sudo nano /etc/ld.so.conf
 
 ```bash
 # 하단에 추가
-/usr/local/cuda-12.8/lib64
+/usr/local/cuda-12.9/lib64
 ```
 ![[image 13.png]]
 
