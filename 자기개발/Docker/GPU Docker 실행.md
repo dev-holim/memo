@@ -18,3 +18,4 @@ docker run --rm --runtime=nvidia --gpus all \
 -v $(pwd)/txt:/app/assets/txt \
 whisper-transcribe
 ```
+
