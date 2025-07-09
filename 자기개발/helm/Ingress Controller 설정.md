@@ -37,5 +37,7 @@ helm upgrade --install erp-fe-nginx ingress-nginx/ingress-nginx \
   --set controller.extraArgs.ingress-class=erp-stage-fe-nginx-ingress-class
 
 
+helm upgrade --install telepix-ui-nginx ingress-nginx/ingress-nginx --namespace telepix-ui --create-namespace --set controller.ingressClass=nginx --set controller.ingressClassResource.name=telepix-ui-nginx-ingress-class --set controller.service.type=NodePort --set controller.service.nodePorts.http=30083 --set controller.service.nodePorts.https=0 --set controller.extraArgs.ingress-class=telepix-ui-nginx-ingress-class
+
 helm upgrade --install erp-homepage-nginx ingress-nginx/ingress-nginx --namespace homepage-ingress --create-namespace --set controller.ingressClass=nginx --set controller.ingressClassResource.name=homepage-stage-be-nginx-ingress-class --set controller.service.type=NodePort --set controller.service.nodePorts.http=30082 --set controller.service.nodePorts.https=0 --set controller.extraArgs.ingress-class=homepage-stage-be-nginx-ingress-class
 ```
