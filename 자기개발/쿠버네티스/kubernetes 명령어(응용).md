@@ -10,4 +10,4 @@ kubectl get secret homepage-be-env -n homepage -o jsonpath='{.data.DB_PORT}' | b
 ```
 
 
-kubectl get secret erp-be-env -n erp -o jsonpath='{.data.JWT_ALGORITHM}' | base64 -d
+kubectl get secret scrapper-env -n scrapper -o jsonpath='{.data.DATABASE_HOST}' | base64 -d

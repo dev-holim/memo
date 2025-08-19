@@ -11,3 +11,12 @@ uv run manage.py collectstatic --dry-run
 ```
 uv pip freeze > requirements.txt
 ```
+
+
+```
+uv run python manage.py migrate user --database=users
+```
+
+```
+uv run python manage.py showmigrations user
+```
