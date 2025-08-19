@@ -82,7 +82,13 @@ kubectl delete namespace {이름}
 ```bash
 kubectl config get-contexts
 kubectl config current-context
+kubectl config use-context {사용할 컨텍스트}
 kubectl config use-context {사용할 컨텍스트} kubectl config set-context <context-name> --cluster=<cluster-name> --user=<user-name> --namespace=<namespace>
+```
+
+노드 삭제
+```
+kubectl config delete-context {삭제할 컨텍스트}
 ```
 
 ==🔴네임스페이스 지우면 해당 api들이 전부 삭제됨!==
