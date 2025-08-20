@@ -24,7 +24,7 @@ sudo ubuntu-drivers devices
 
 4. ndivia driver 설치
 ```bash
-sudo apt install nvidia-driver-550
+sudo apt install nvidia-driver-575
 
 sudo reboot
 ```
