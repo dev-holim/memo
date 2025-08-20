@@ -41,3 +41,23 @@ aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS
   
 ```
 
+
+
+
+
+```
+sudo nano ~/.aws/config
+
+[default]
+region = ap-northeast-2
+```
+
+
+
+```
+sudo nano ~/.aws/credentials
+
+[default]
+aws_access_key_id = 
+aws_secret_access_key =
+```
