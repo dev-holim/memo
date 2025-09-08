@@ -31,7 +31,7 @@ kubectl exec -it media-scrapper-deployment-55b6d89bb5-snwsx -n cron -- bash
 ### 리텐
 
 ```
-aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com
+aws ecr get-login-password --region ap-northeast-2 --profile reten | docker login --username AWS --password-stdin 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com
 ```
 
 

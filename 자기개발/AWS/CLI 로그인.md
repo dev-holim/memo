@@ -38,6 +38,9 @@ aws configure sso --profile 3d-viewer
 #### ECR 로그인
 ```bash
 aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com
+
+
+aws ecr get-login-password --region ap-northeast-2 |aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com
   
 ```
 

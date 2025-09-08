@@ -83,7 +83,10 @@ kubectl delete namespace {이름}
 kubectl config get-contexts
 kubectl config current-context
 kubectl config use-context {사용할 컨텍스트}
-kubectl config use-context {사용할 컨텍스트} kubectl config set-context <context-name> --cluster=<cluster-name> --user=<user-name> --namespace=<namespace>
+kubectl config use-context {사용할 컨텍스트} 
+kubectl config set-context <context-name> --cluster=<cluster-name> --user=<user-name> --namespace=<namespace>
+
+kubectl config set-context <context-name> --cluster=<cluster-name> --user=<user-name> --namespace=<namespace>
 ```
 
 노드 삭제
