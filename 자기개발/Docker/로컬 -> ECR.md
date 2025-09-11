@@ -1,5 +1,5 @@
 ```bash
-aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com
+aws ecr get-login-password --region ap-northeast-2 --profile telepix | docker login --username AWS --password-stdin 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com
 ```
 
 ```bash
@@ -14,9 +14,9 @@ docker build -t media-scrapper .
 ```bash
 docker buildx build --platform linux/amd64 -t media-scrapper .
 
-docker tag media-scrapper:latest 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-v1.1.2
+docker tag media-scrapper:latest 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-v1.1.3
 
-docker push 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-v1.1.2
+docker push 242945818639.dkr.ecr.ap-northeast-2.amazonaws.com/scrapper:media-v1.1.3
 ```
 
 
