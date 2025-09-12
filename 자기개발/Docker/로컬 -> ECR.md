@@ -51,3 +51,22 @@ docker push 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com/reten:1.0.0
 ```
 aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com
 ```
+
+
+### 유포리아
+
+```
+aws ecr get-login-password --region ap-northeast-2 --profile euphoria | docker login --username AWS --password-stdin 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com
+```
+
+
+```
+docker buildx build --platform linux/amd64 -t euphoria .
+```
+
+```
+docker tag euphoria:latest 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com/euphoria:1.0.0
+
+
+docker push 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com/euphoria:1.0.0
+```
