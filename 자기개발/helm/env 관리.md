@@ -34,6 +34,16 @@ kubectl apply -f erp-fe-env-secret.yaml
 ```
 
 
+
+### PostgreSQL & Redis
+```bash
+kubectl create secret generic postgres-env --from-env-file=.env -n database --dry-run=client -o yaml > postgres-env-secret.yaml
+kubectl apply -f postgres-env-secret.yaml
+
+kubectl create secret generic redis-secret --from-env-file=.env -n database --dry-run=client -o yaml > secret.yaml
+kubectl apply -f secret.yaml
+```
+
 ### Reten
 ```bash
 kubectl create secret generic reten-fe-env --from-env-file=.env -n reten --dry-run=client -o yaml > reten-fe-env-secret.yaml
@@ -42,5 +52,6 @@ kubectl apply -f reten-fe-env-secret.yaml
 kubectl create secret generic reten-be-env --from-env-file=.env -n reten --dry-run=client -o yaml > reten-be-env-secret.yaml
 kubectl apply -f reten-be-env-secret.yaml
 ```
+
 
 
