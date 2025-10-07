@@ -49,7 +49,13 @@ docker push 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com/reten:1.0.0
 
 ### 이종연
 ```
-aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 801541932050.dkr.ecr.ap-northeast-2.amazonaws.com
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 396531908600.dkr.ecr.ap-northeast-2.amazonaws.com
+
+docker pull 396531908600.dkr.ecr.ap-northeast-2.amazonaws.com/ljy:1.0.1
+
+docker run -d -p 80:80 --name ljy --env-file .env 396531908600.dkr.ecr.ap-northeast-2.amazonaws.com/ljy:1.0.1
+
+
 ```
 
 
@@ -69,4 +75,13 @@ docker tag euphoria:latest 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com/eup
 
 
 docker push 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com/euphoria:1.0.0
+```
+
+
+```
+aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com
+
+docker pull 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com/euphoria:{}
+
+docker run -d --name euphoria-app -p 3000:3000 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com/euphoria:{}
 ```
