@@ -62,7 +62,7 @@ docker run -d -p 80:80 --name ljy --env-file .env 396531908600.dkr.ecr.ap-northe
 ### 유포리아
 
 ```
-aws ecr get-login-password --region ap-northeast-2 --profile euphoria | docker login --username AWS --password-stdin 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com
+aws ecr get-login-password --region ap-northeast-2 --profile euphoria | docker login --username AWS --password-stdin 484907526002.dkr.ecr.ap-northeast-2.amazonaws.com
 ```
 
 
